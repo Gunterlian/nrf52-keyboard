@@ -105,15 +105,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define PIN_STANDBY !UCC2
 
 // 按键阵列配置
-#define MATRIX_ROWS 9 /* 硬件阵列行数 */
-#define MATRIX_COLS 10 /* 硬件阵列列数 */
+#define MATRIX_ROWS 6 /* 硬件阵列行数 */
+#define MATRIX_COLS 14 /* 硬件阵列列数 */
 
 /* key combination for command */
 #define IS_COMMAND() ( \
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
-static const uint8_t row_pin_array[MATRIX_ROWS] = { 13, 14, 17, 22, 23, 24, 20, 19, 30 };
-static const uint8_t column_pin_array[MATRIX_COLS] = { 8, 9, 10, 25, 26, 27, 28, 29, 11, 12 };
+static const uint8_t row_pin_array[MATRIX_ROWS] = { 13, 14, 17, 22, 23, 24 };
+static const uint8_t column_pin_array[MATRIX_COLS] = { 8, 9, 10, 25, 26, 27, 28, 29, 11, 12, 20, 19, 18, 7 };
 #define ROW_IN // 键盘阵列的二极管方向是从COL->ROW
 
 /* define if matrix has ghost */
