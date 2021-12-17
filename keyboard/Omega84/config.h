@@ -23,11 +23,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* USB和蓝牙的显示参数 */
 #define VENDOR_ID 0x1209 /* USB VID */
 #define PRODUCT_ID 0x0514 /* USB PID */
-#define CONF_VENDOR_ID 0x4366 /* 配置项目内显示的VendorID */
-#define CONF_PRODUCT_ID 0x0318 /* 配置项目内显示的ProductID */
+#define CONF_VENDOR_ID 0x4467 /* 配置项目内显示的VendorID */
+#define CONF_PRODUCT_ID 0x3738 /* 配置项目内显示的ProductID */
 #define DEVICE_VER 0x0000 /* 硬件版本 */
 #define MANUFACTURER "Lotlab" /* 硬件制造商，用于蓝牙显示 */
-#define PRODUCT "Omega84" /* 硬件名词，用于蓝牙显示 */
+#define PRODUCT "Dogge78" /* 硬件名词，用于蓝牙显示 */
 #define MACADDR_SEPRATOR ' ' /* 蓝牙名称后地址的分隔符。若不设置则不显示蓝牙名称后面的地址 */
 
 /* USB HID report parameter */
@@ -69,11 +69,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_FUNCTION
 
 // LED 配置
-#define LED_CAPS 4
+#define LED_CAPS 6
 
 // ws2812 RGB 配置
-#define RGB_DI_PIN 10
-#define RGBLED_NUM 8
+#define RGB_DI_PIN 15
+#define RGBLED_NUM 78
 #define RGBLIGHT_ANIMATIONS
 #define RGB_PWR_PIN 11 // P-mos
 //#define RGB_PWR_PIN_REVERSE 20 // N-mos
@@ -88,12 +88,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LED_POSITIVE // LED上拉驱动
 
 // 独立硬件按钮
-#define POWER_BUTTON 3
+//#define POWER_BUTTON 3
 
 // USB UART 传输配置
 #define HAS_USB // 启用与CH554的通信支持
-#define UART_RXD 8 // UART_RX口IO 17
-#define UART_TXD 9 // UART_TX口IO 18
+#define UART_RXD 30 // UART_RX口IO 30
+#define UART_TXD 31 // UART_TX口IO 31
 //#define UART_DET 19 // UART 检测引脚，若此脚被拉低，则说明USB正在工作。若不配置则使用RX口作为检测引脚
 #define UART_BAUDRATE NRF_UART_BAUDRATE_115200 // 通信波特率，请不要修改
 
