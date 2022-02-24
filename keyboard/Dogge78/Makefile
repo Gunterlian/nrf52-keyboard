@@ -7,7 +7,7 @@ ROOT_DIR := ../..
 
 # 配置项：主控芯片类型
 # 可选：nrf52810 或 nrf52832
-NRF_CHIP := nrf52810
+NRF_CHIP := nrf52832
 
 # 配置文件文件名
 CONFIG_H = config.h
