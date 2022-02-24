@@ -21,8 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <stdint.h>
 
 /* USB和蓝牙的显示参数 */
-#define VENDOR_ID 0x1209 /* USB VID */
-#define PRODUCT_ID 0x0514 /* USB PID */
+#define VENDOR_ID 0x4467 /* USB VID */
+#define PRODUCT_ID 0x3738 /* USB PID */
 #define CONF_VENDOR_ID 0x4467 /* 配置项目内显示的VendorID */
 #define CONF_PRODUCT_ID 0x3738 /* 配置项目内显示的ProductID */
 #define DEVICE_VER 0x0000 /* 硬件版本 */
@@ -69,7 +69,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_FUNCTION
 
 // LED 配置
-#define LED_CAPS 6
+//#define LED_CAPS 6
 
 // ws2812 RGB 配置
 #define RGB_DI_PIN 15
@@ -88,12 +88,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define LED_POSITIVE // LED上拉驱动
 
 // 独立硬件按钮
-//#define POWER_BUTTON 3
+//#define POWER_BUTTON 21
 
 // USB UART 传输配置
 #define HAS_USB // 启用与CH554的通信支持
-#define UART_RXD 30 // UART_RX口IO 30
-#define UART_TXD 31 // UART_TX口IO 31
+#define UART_RXD 31 // UART_RX口IO 30
+#define UART_TXD 30 // UART_TX口IO 31
 //#define UART_DET 19 // UART 检测引脚，若此脚被拉低，则说明USB正在工作。若不配置则使用RX口作为检测引脚
 #define UART_BAUDRATE NRF_UART_BAUDRATE_115200 // 通信波特率，请不要修改
 
